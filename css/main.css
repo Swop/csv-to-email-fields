@@ -1,0 +1,29 @@
+/*
+    Author:     Sylvain Mauduit <swop@swop.io>
+    License:    MIT
+ */
+
+#data-zone, #params {
+    padding: 20px;
+}
+
+#data-export-zone .data-export-item, #data-zone textarea {
+    width: 100%;
+}
+
+#generate-button {
+    width: 100%;
+    padding: 10px;
+}
+
+#separator {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.rank {
+    font-weight: bold;
+    font-size: 25px;
+    color: lightgray;
+    text-align: right;
+}
