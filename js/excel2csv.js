@@ -32,7 +32,6 @@ function computeResults(data, params) {
         }, []);
     }
 
-    console.log('Itmes count: '+items.length);
     var steps = Math.ceil(items.length / params.itemsPerLine);
 
     for (var i = 0; i < steps; i++) {
@@ -40,7 +39,8 @@ function computeResults(data, params) {
             items.slice(
                 params.itemsPerLine * i,
                 params.itemsPerLine * (i + 1)
-            ).join(params.itemsSeparator));
+            ).join(params.itemsSeparator)
+        );
     }
 
     return results;
@@ -51,10 +51,11 @@ $(function() {
         var data = $('#data-input').val();
 
         clearResults();
-        var results = computeResults(data, getParams())
+        var results = computeResults(data, getParams());
 
         var dataExportZone = $('#data-export-zone');
         var length = results.length, result = null;
+
         for (var i = 0; i < length; i++) {
             result = results[i];
 
